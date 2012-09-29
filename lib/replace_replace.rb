@@ -21,12 +21,6 @@ class Array
     end
   end
 
-  def replace!(index_or_array, *rests)
-    replace index_or_array, *rests
-  rescue Exception
-    nil
-  end
-
 end
 
 
@@ -49,12 +43,6 @@ class Hash
       raise ArgumentError,
         "wrong number of arguments (#{arity} for 1..2)"
     end
-  end
-
-  def replace!(key_or_hash, *rests)
-    replace key_or_hash, *rests
-  rescue Exception
-    nil
   end
 
 end
