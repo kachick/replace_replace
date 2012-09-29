@@ -1,15 +1,33 @@
 replace_replace
-================
+==================
 
 Description
 -----------
 
-Improve API around Hash#replace, Array#replace
+Improve API around Hash#replace, Array#replace.
+The reason is described in [my gist](https://gist.github.com/3774165).
+
+```plaintext
+get
+====
+        |Array  |Hash
+-----------------------
+strict |fetch  |fetch
+auto   |[], at |[]
+
+
+set
+====
+        |Array  |Hash
+-----------------------
+strict |?       |?             => Provide this.
+auto   |[]=     |[]=, store
+```
 
 Features
 --------
 
-* #fetch like strict replacement methods into Hash, Array
+* Strict replacement methods into Hash, Array
 * Pure Ruby :)
 
 Usage
@@ -18,11 +36,17 @@ Usage
 ### Overview
 
 ```ruby
-require 'replace_replace'
+require 'replace_replace/core_ext'
+
+[1, 2, 3].replace [4, 5, 6]          #=> [4, 5, 6]
+[1, 2, 3].replace 1, 7               #=> [1, 7, 3]
+[1, 2, 3].replace 3, 8               #=> IndexError
 
 
+({a: 1, b: 2}.replace({c: 3, d: 4})) #=> {:c=>3, :d=>4}
+({a: 1, b: 2}.replace(:a, 5))        #=> {:a=>5, :b=>2}
+({a: 1, b: 2}.replace(:c, 7))        #=> KeyError
 ```
-
 
 Requirements
 -------------

@@ -1,43 +1,28 @@
 # Copyright (c) 2012 Kenichi kamiya
 
-class Array
+# depend #replace_all, #fetch
+module Replace_Replace
 
-  alias_method :replace_all, :replace
-
+  # @overload replace(family)
+  #   @param [Hash, Array] family
+  # @overload replace(key_or_index, value)
+  #   @param key_or_index
   # @return [self]
-  def replace(index_or_array, *rests)
+  def replace(key_or_family, *rests)
     arity = 1 + rests.length
 
     case arity
     when 1
-      replace_all index_or_array
+      replace_all key_or_family
     when 2
-      fetch index_or_array
-      self[index_or_array] = rests.first
-      self
-    else
-      raise ArgumentError,
-        "wrong number of arguments (#{arity} for 1..2)"
-    end
-  end
+      begin
+        fetch key_or_family
+      rescue
+        $@.shift
+        raise
+      end
 
-end
-
-
-class Hash
-
-  alias_method :replace_all, :replace
-
-  # @return [self]
-  def replace(key_or_hash, *rests)
-    arity = 1 + rests.length
-
-    case arity
-    when 1
-      replace_all key_or_hash
-    when 2
-      fetch key_or_hash
-      self[key_or_hash] = rests.first
+      self[key_or_family] = rests.first
       self
     else
       raise ArgumentError,
