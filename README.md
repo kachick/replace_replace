@@ -12,16 +12,16 @@ get
 ====
         |Array  |Hash
 -----------------------
-strict |fetch  |fetch
-auto   |[], at |[]
+strict  |fetch  |fetch
+auto    |[], at |[]
 
 
 set
 ====
         |Array  |Hash
 -----------------------
-strict |?       |?             => Provide this.
-auto   |[]=     |[]=, store
+strict  |?       |?             => Provide this.
+auto    |[]=     |[]=, store
 ```
 
 Features
