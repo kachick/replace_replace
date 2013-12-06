@@ -1,3 +1,5 @@
+# coding: us-ascii
+
 $VERBOSE = true
 
 require_relative '../lib/replace_replace/core_ext'
