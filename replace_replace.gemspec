@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q~Improve API around {Hash,Array}#replace~
   gem.summary       = gem.description.dup
   gem.license       = 'BSD 2-Clause'
-  gem.version       = '0.0.1'
+  gem.version       = '0.0.2'
 
   gem.required_ruby_version = '>= 1.9.3'
   gem.add_development_dependency 'test-unit', '>= 2.5.5', '< 2.6'
