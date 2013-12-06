@@ -1,11 +1,14 @@
 replace_replace
 ==================
 
+[![Build Status](https://secure.travis-ci.org/kachick/replace_replace.png)](http://travis-ci.org/kachick/replace_replace)
+[![Gem Version](https://badge.fury.io/rb/replace_replace.png)](http://badge.fury.io/rb/replace_replace)
+
 Description
 -----------
 
-Improve API around Hash#replace, Array#replace.
-The reason is described in [my gist](https://gist.github.com/3774165).
+Improve API around {Hash,Array}#replace.
+See [my gist](https://gist.github.com/3774165).
 
 ```plaintext
 get
@@ -51,7 +54,7 @@ require 'replace_replace/core_ext'
 Requirements
 -------------
 
-* Ruby - [1.9.2 or later](http://travis-ci.org/#!/kachick/replace_replace)
+* [Ruby 1.9.3 or later](http://travis-ci.org/#!/kachick/replace_replace)
 
 Install
 -------
@@ -59,11 +62,6 @@ Install
 ```bash
 $ gem install replace_replace
 ```
-
-Build Status
--------------
-
-[![Build Status](https://secure.travis-ci.org/kachick/replace_replace.png)](http://travis-ci.org/kachick/replace_replace)
 
 Link
 ----
@@ -80,4 +78,3 @@ License
 The 2-clause BSD License  
 Copyright (c) 2012 Kenichi Kamiya  
 See BSD-LICENSE for further details.
-
