@@ -54,7 +54,7 @@ require 'replace_replace/core_ext'
 Requirements
 -------------
 
-* [Ruby 1.9.3 or later](http://travis-ci.org/#!/kachick/replace_replace)
+* [Ruby 2.5 or later](http://travis-ci.org/#!/kachick/replace_replace)
 
 Install
 -------
