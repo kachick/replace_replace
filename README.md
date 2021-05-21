@@ -1,8 +1,9 @@
 replace_replace
 ==================
 
-[![Build Status](https://secure.travis-ci.org/kachick/replace_replace.png)](http://travis-ci.org/kachick/replace_replace)
-[![Gem Version](https://badge.fury.io/rb/replace_replace.png)](http://badge.fury.io/rb/replace_replace)
+* ***This repository is archived***
+* ***No longer maintained***
+* ***All versions have been yanked from https://rubygems.org/ for releasing valuable namespace for others***
 
 Description
 -----------
@@ -56,21 +57,10 @@ Requirements
 
 * [Ruby 2.5 or later](http://travis-ci.org/#!/kachick/replace_replace)
 
-Install
--------
-
-```bash
-$ gem install replace_replace
-```
-
 Link
 ----
 
 * [code](https://github.com/kachick/replace_replace)
-* [API](http://kachick.github.com/replace_replace/yard/frames.html)
-* [issues](https://github.com/kachick/replace_replace/issues)
-* [CI](http://travis-ci.org/#!/kachick/replace_replace)
-* [gem](https://rubygems.org/gems/replace_replace)
 
 License
 --------
